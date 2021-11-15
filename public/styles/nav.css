@@ -8,8 +8,8 @@
   width:100vw;
   padding: 1.5em;
   align-items: center;
-  position: absolute;
-  opacity: 1;
+  position: fixed;
+  top: 0px;
 }
 
 .logo {
