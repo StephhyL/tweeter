@@ -27,5 +27,6 @@ body {
 
  * {
   font-family: source sans pro;
+  box-sizing: content-box;
  }
 
