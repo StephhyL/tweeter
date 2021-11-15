@@ -1,16 +1,22 @@
 .heading {
+  border: 5px dotted purple;
   height: 400px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  position: relative;
+  justify-content: flex-start;
   align-items: center;
   background-color: coral;
-  top: 120px;
   background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+  margin-top:120px;
+}
+
+.profile {
+  border: 5px dashed yellow;
 }
 
 .name {
   color: #FFFFFF;
+  margin: 0px;
+  border: 5px dashed pink;
 }
