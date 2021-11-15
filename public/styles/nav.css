@@ -8,7 +8,8 @@
   width:100%;
   padding: 1.5em;
   align-items: center;
-  position: relative;
+  position: absolute;
+  opacity: 1;
 }
 
 .logo {
