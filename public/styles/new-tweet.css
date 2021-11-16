@@ -1,0 +1,22 @@
+.new-tweet {
+  display:flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 5px solid black;
+}
+
+.button-counter {
+  display:flex;
+  justify-content: space-between;
+  font-family: bungee;
+  padding-top: 5px;
+}
+
+.negative {
+  color: red;
+}
