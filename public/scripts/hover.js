@@ -1,29 +1,21 @@
-
-// same value as addClass
-const newClass = (target, expression, className) => {
-  expression ? target.addClass(className): target.removeClass(className);
-}
-
 $(document).ready(() => {
-  // when hovering over the tweet, 
-  $(".tweet").mouseover(function () {
-    // console.log("hello");
-    // console.log("this");
+  // when hovering over the tweet, adds a class that creates a shadow border
+  $(".tweet").mouseover(function() {
     $(this).addClass("tweetBorder");
-  })
+  });
 
-  $(".tweet").mouseleave(function () {
+  // when not hovering over the tweet, removes a class that creates a shadow border
+  $(".tweet").mouseleave(function() {
     $(this).removeClass("tweetBorder");
-  })
+  });
 
-  $("div.icons i").mouseover(function(){
+  // when hovering over the icon, adds a class that makes the icon red
+  $("div.icons i").mouseover(function() {
     $(this).addClass("fill");
-  })
+  });
 
-  $("div.icons i").mouseleave(function(){
+  // when not hovering on the icon, removes a class that makes the icon red
+  $("div.icons i").mouseleave(function() {
     $(this).removeClass("fill");
-  })
-
-
-
+  });
 });
