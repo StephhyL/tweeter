@@ -6,19 +6,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: coral;
+  background-color: rgb(150, 218, 250);
   background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
   position: relative;
   margin-top:120px;
   z-index: 1;
 }
 
-.profile {
+/* .profile {
   border: 5px dashed yellow;
-}
+} */
 
 .name {
-  color: #FFFFFF;
+  color: #200b0b;
   margin: 0px;
-  border: 5px dashed pink;
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px;
+  font-weight: bold;
+  /* border: 5px dashed pink; */
 }
