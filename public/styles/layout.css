@@ -25,8 +25,15 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- * {
+ body {
   font-family: source sans pro;
   box-sizing: border-box;
+ }
+
+ main {
+   margin-left: 5%;
+   margin-right: 5%;
+   margin-top: 0%;
+   background-color: green;
  }
 
