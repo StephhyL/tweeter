@@ -9,13 +9,9 @@
   background-color: rgb(150, 218, 250);
   background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
   position: relative;
-  margin-top:120px;
+  margin-top: 120px;
   z-index: 1;
 }
-
-/* .profile {
-  border: 5px dashed yellow;
-} */
 
 .name {
   color: #200b0b;
@@ -24,5 +20,4 @@
   border-radius: 15px;
   padding: 5px;
   font-weight: bold;
-  /* border: 5px dashed pink; */
 }
