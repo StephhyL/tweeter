@@ -9,10 +9,15 @@ article > header > div > img {
 }
 
 .tweet {
-  border: 5px black solid;
+  border: 5px palevioletred dashed;
   padding: 10px;
   margin-top: 40px;
 }
+
+.tweetBorder {
+  box-shadow: 5px 10px #888888;
+}
+
 
 article.tweet > header {
   display:flex;
@@ -26,6 +31,10 @@ article.tweet > header {
   align-items: center;
 }
 
+.avatar-name > span {
+  margin-left: 5px;
+}
+
 div.icons > i {
   margin-left: 10px;
 }
@@ -34,10 +43,14 @@ div.icons > i {
   display: flex
 }
 
+.fill {
+  color:red;
+}
+
 .date-icons {
   display: flex;
   justify-content: space-between;
-  border-top: 4px solid cornflowerblue;
+  border-top: 4px solid rgb(51, 95, 146);
   padding-top: 4px;
   margin-top: 20px;
 }
