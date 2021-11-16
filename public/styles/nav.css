@@ -8,6 +8,7 @@
   width:100vw;
   padding: 1.5em;
   align-items: center;
+  z-index: 2;
   position: fixed;
   top: 0px;
 }
