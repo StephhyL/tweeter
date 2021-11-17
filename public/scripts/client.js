@@ -47,7 +47,7 @@ $(()=> {
     // appending the icons into a div
     $divIcons.append($iFlag, $iRetweet, $iHeart);
 
-    const $spanDate = $("<span>").attr("name", "date").text(tweet.created_at);
+    const $spanDate = $("<span>").attr("name", "date").text(timeago.format(tweet.created_at));
     const $footer = $("<footer>").addClass("date-icons");
 
     //appending the div with icons and date into a footer
