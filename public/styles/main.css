@@ -18,10 +18,9 @@ article > header > div > img {
   margin-top: 40px;
 }
 
-.tweetBorder {
+.tweet:hover {
   box-shadow: 5px 10px #888888;
 }
-
 
 article.tweet > header {
   display:flex;
@@ -43,13 +42,14 @@ div.icons > i {
   margin-left: 10px;
 }
 
+div.icons > i:hover {
+  color:red;
+}
+
 .icons {
   display: flex
 }
 
-.fill {
-  color:red;
-}
 
 .date-icons {
   display: flex;
