@@ -7,19 +7,6 @@
 // jQuery's document ready function. Everything will run once page is loaded
 
 $(()=> {
-  //   tweets is an array
-  const loadTweets = () => {
-    const data = renderTweets(tweets);
-    //******getting data from /tweets gets an array with 4 object tweets. We can then "render" these tweets. Each tweet goes through create tweet element. Note to self - this is only the GET request of the inital data - for now. Nothing to do with the POST.
-    $.get("/tweets", (tweets)=> {
-      console.log(tweets);
-      renderTweets(tweets);
-    });
-  }
-
-  //calling the loadTweets
-  loadTweets();
-
   // creates a new tweet with all the HTML elements. parameter tweet is an object
   const createTweetElement = (tweet) => {
     
@@ -63,15 +50,30 @@ $(()=> {
   
   // loops through an array of tweets, calls createTweetElement for each tweet, return value is appended to the tweets container
   const renderTweets = (tweets) => {
+    // empties the container first before appending new tweets to it.
+   $("#tweets-container").empty();
    tweets.forEach(tweet => {
      const $tweet = createTweetElement(tweet);
-     $("#tweets-container").append($tweet);
+     $("#tweets-container").prepend($tweet);
    });
    console.log($("#tweets-container"))
    return $("#tweets-container");
   }
   
   //renderTweets(data);
+
+  //   tweets is an array
+  const loadTweets = () => {
+    //******getting data from /tweets gets an array with 4 object tweets. We can then "render" these tweets. Each tweet goes through create tweet element. Note to self - this is only the GET request of the inital data - for now. Nothing to do with the POST.
+    $.get("/tweets", (tweets)=> {
+      // console.log(tweets);
+      renderTweets(tweets);
+    });
+  }
+
+  //calling the loadTweets
+  loadTweets();
+
 
   // validates if the tweet is within 140 characters, else returns error value
   const validateTweet = (number) => {
@@ -103,10 +105,14 @@ $(()=> {
     $.post("/tweets", serializedData, (response) => {
       console.log(serializedData);
       // console.log("hello biss")
+
+      
+      //clears the textbox after user writes a tweet
+      this.text.value = "";
+      loadTweets();
     });
+
   })
-
-
 
 })
 
