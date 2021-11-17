@@ -84,6 +84,27 @@ $(()=> {
   }
   
   renderTweets(data);
+
+
+  // EXERCISE 2 *********************
+  $("form").submit(function (event) {
+    // prevents the default of refreshing the browser
+    event.preventDefault();
+
+    // converts/serializes form data into query string
+    const serializedData = $(this).serialize();
+
+
+  //****WHY IS IT NOT /TWEETS/ */
+    //post request to server.js
+    $.post("/tweets", serializedData, (response) => {
+      console.log(serializedData);
+    });
+
+  })
+
+
+
   
 })
 
