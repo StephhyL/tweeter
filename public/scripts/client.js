@@ -7,6 +7,7 @@
 // jQuery's document ready function. Everything will run once page is loaded
 
 $(()=> {
+  $("#error").hide();
   // creates a new tweet with all the HTML elements. parameter tweet is an object
   const createTweetElement = (tweet) => {
     
@@ -50,10 +51,11 @@ $(()=> {
   
   // loops through an array of tweets, calls createTweetElement for each tweet, return value is appended to the tweets container
   const renderTweets = (tweets) => {
-    // empties the container first before appending new tweets to it.
+    // empties the container first before prepending new tweets to it.
    $("#tweets-container").empty();
    tweets.forEach(tweet => {
      const $tweet = createTweetElement(tweet);
+     // prepending tweets so they show up at the top
      $("#tweets-container").prepend($tweet);
    });
    console.log($("#tweets-container"))
@@ -85,7 +87,6 @@ $(()=> {
     }
     return {error:null, val: true}
   }
-
   // activated when submit button is pressed.
   $("form").submit(function (event) {
     // prevents the default of refreshing the browser
@@ -93,20 +94,23 @@ $(()=> {
     // console.log("this.text.value---->", this.text.value);
     const tweetLength = this.text.value.length;
     const {error, val} = validateTweet(tweetLength);
-    // if tweet is not valid, send an alert to the user and abort
+    // if tweet is not valid, error box appears on screen with appropriate message
     if (error) {
-      return alert(error);
+      $("#error-message").text(error);
+      return $("#error").slideDown("fast");
     }
+
+    //hides error message if valid tweet
+    $("#error").hide();
 
     // converts/serializes form data into query string
     const serializedData = $(this).serialize();
-
     //post request to server.js
     $.post("/tweets", serializedData, (response) => {
       console.log(serializedData);
       // console.log("hello biss")
 
-      
+
       //clears the textbox after user writes a tweet
       this.text.value = "";
       loadTweets();
