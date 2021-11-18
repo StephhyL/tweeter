@@ -23,6 +23,8 @@
   align-items: center;
 }
 
-.arrow {
+#arrow {
   color: red;
+  background-color: pink;
+  border: none;
 }
