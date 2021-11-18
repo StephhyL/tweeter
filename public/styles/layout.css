@@ -19,18 +19,15 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: source sans pro;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-
- body {
-  font-family: source sans pro;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
- }
 
  main {
    margin-left: 5%;
@@ -51,12 +48,6 @@ body {
     font-size: 13px;
   }
 }
-
-/* @media only screen and (max-width: 400px) {
-  body {
-    font-size: 12px;
-  }
-} */
 
  @media only screen and (min-width: 1500px) {
    body {
