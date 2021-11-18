@@ -10,7 +10,11 @@ This repository, though not intentional, is also a template.
 
 ## Final Product
 
-!["Screenshot of the larger screen version of the site upon inital load"](https://github.com/StephhyL/tweeter/blob/master/docs/desktop-version-initial-page-load.png)
+!["Screenshot of the large-screen version of the site upon inital load"](https://github.com/StephhyL/tweeter/blob/master/docs/desktop-version-initial-page-load.png)
+!["Screenshot of the medium-screen version of the site with invalid tweet](https://github.com/StephhyL/tweeter/blob/master/docs/tablet-version-invalid-tweet.png)
+!["Screenshot of the small-screen version of the site with valid load"](https://github.com/StephhyL/tweeter/blob/master/docs/phone-version-valid-tweet.png)
+
+
 
 ## Getting Started
 
