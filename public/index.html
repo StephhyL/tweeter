@@ -3,7 +3,8 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-    
+
+    <!-- Disable Viewpoint Zooming Code-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Reset CSS -->
@@ -17,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
     <!-- Font-Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- timeago-->
+    <!-- timeago -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- App CSS -->
@@ -50,14 +51,13 @@
     <header class="heading">
       <div class="profile">
         <picture>
+          <!-- Profile image loaded is dependent on width of screen-->
           <source srcset="./images/profile-hex-extra-small.png" media="(max-width: 370px)">
           <source srcset="./images/profile-hex-small.png" media="(max-width: 570px)">
           <source srcset="./images/profile-hex.png" media="(min-width: 769px)">
           <img src="/images/profile-hex.png" alt="profile photo">
         </picture>
-        
       </div>
-
       <div>
         <h2 class="name">STEPH</h2>
       </div>
@@ -65,7 +65,6 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-
       <section class="new-tweet">
         <!-- Error message -->
         <div id="error">
