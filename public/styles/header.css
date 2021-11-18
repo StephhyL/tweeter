@@ -30,13 +30,9 @@
     margin:0px;
     position:absolute;
   }
-  div.profile img {
-    width: 8em;
-    height: 8em;
-  }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 570px) {
   .heading {
     background-color: green;
     height: 25%;
