@@ -7,7 +7,10 @@
 // jQuery's document ready function. Everything will run once page is loaded
 
 $(()=> {
+  //hiding the error message when the page loads
   $("#error").hide();
+
+
   // creates a new tweet with all the HTML elements. parameter tweet is an object
   const createTweetElement = (tweet) => {
     
@@ -91,17 +94,22 @@ $(()=> {
   $("form").submit(function (event) {
     // prevents the default of refreshing the browser
     event.preventDefault();
+    
+    //hides error message if valid tweet
+    $("#error").hide();
+
     // console.log("this.text.value---->", this.text.value);
     const tweetLength = this.text.value.length;
     const {error, val} = validateTweet(tweetLength);
+
     // if tweet is not valid, error box appears on screen with appropriate message
     if (error) {
+      alert()
+
       $("#error-message").text(error);
       return $("#error").slideDown("fast");
     }
 
-    //hides error message if valid tweet
-    $("#error").hide();
 
     // converts/serializes form data into query string
     const serializedData = $(this).serialize();
@@ -110,9 +118,10 @@ $(()=> {
       console.log(serializedData);
       // console.log("hello biss")
 
-
       //clears the textbox after user writes a tweet
       this.text.value = "";
+      // resets the counter to 140 characters
+      $(this).find(".counter").text(140);
       loadTweets();
     });
 
