@@ -22,3 +22,25 @@
   padding: 5px;
   font-weight: bold;
 }
+
+
+@media only screen and (max-width: 768px) {
+  .heading {
+    width: 100%;
+    margin:0px;
+    position:absolute;
+  }
+  div.profile img {
+    width: 8em;
+    height: 8em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .heading {
+    background-color: green;
+    height: 25%;
+  }
+}
+
+
