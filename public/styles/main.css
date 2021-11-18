@@ -7,10 +7,9 @@
   margin-bottom: 8vh;
 }
 
-article > header > div > img {
-  width: 50px;
-}
+/* For individual tweets */
 
+/* styles involving the tweet box */
 .tweet {
   border: 5px palevioletred dashed;
   padding: 0.7em;
@@ -21,11 +20,16 @@ article > header > div > img {
   box-shadow: 5px 10px #888888;
 }
 
+/* styles involving the header of the tweet */
 article.tweet > header {
   display:flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1em;
+}
+
+article > header > div > img {
+  width: 50px;
 }
 
 .avatar-name {
@@ -37,6 +41,7 @@ article.tweet > header {
   margin-left: 0.5em;
 }
 
+/* styles involving the footer of the tweet */
 div.icons > i {
   margin-left: 0.5em;
 }
