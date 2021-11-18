@@ -57,6 +57,7 @@ div.icons > i:hover {
   margin-top: 0.5em;
 }
 
+/* Media queries for different screen sizes */
 @media only screen and (max-width: 768px) {
   .container {
     width: 90%;

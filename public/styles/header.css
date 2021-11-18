@@ -23,7 +23,7 @@
   font-weight: bold;
 }
 
-
+/* Media queries for different screen sizes */
 @media only screen and (max-width: 768px) {
   .heading {
     width: 100%;
