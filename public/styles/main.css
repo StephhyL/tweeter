@@ -1,8 +1,7 @@
-/* .container { */
-  /* display:flex;
-  flex-direction: column;
-  align-items: center; */
-/* } */
+.container { 
+  width: 60%;
+  margin-top: 120px;
+}
 
 #tweets-container {
   margin-bottom: 8vh;
@@ -14,8 +13,8 @@ article > header > div > img {
 
 .tweet {
   border: 5px palevioletred dashed;
-  padding: 10px;
-  margin-top: 40px;
+  padding: 0.7em;
+  margin-top: 1.5em;
 }
 
 .tweet:hover {
@@ -26,7 +25,7 @@ article.tweet > header {
   display:flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 1em;
 }
 
 .avatar-name {
@@ -35,11 +34,11 @@ article.tweet > header {
 }
 
 .avatar-name > span {
-  margin-left: 5px;
+  margin-left: 0.5em;
 }
 
 div.icons > i {
-  margin-left: 10px;
+  margin-left: 0.5em;
 }
 
 div.icons > i:hover {
@@ -50,11 +49,10 @@ div.icons > i:hover {
   display: flex
 }
 
-
 .date-icons {
   display: flex;
   justify-content: space-between;
   border-top: 4px solid rgb(51, 95, 146);
-  padding-top: 4px;
-  margin-top: 20px;
+  padding-top: 0.5em;
+  margin-top: 0.5em;
 }
