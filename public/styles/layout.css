@@ -28,6 +28,7 @@ body {
  body {
   font-family: source sans pro;
   box-sizing: border-box;
+  display: flex;
  }
 
  main {
