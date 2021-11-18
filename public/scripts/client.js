@@ -55,7 +55,6 @@ $(()=> {
     return $("#tweets-container");
   };
   
-
   /**
    * makes an ajax GET request to retreieve tweets and displays on page
   */
