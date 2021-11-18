@@ -5,6 +5,7 @@
   margin-top: 1em;
 }
 
+/* styles associated with the top of the new tweet */
 .message {
   display: flex;
   flex-direction: column;
@@ -14,6 +15,18 @@
   font-weight: bold;
 }
 
+/* styles associated with the form */
+#tweet-text {
+  width: 100%;
+  height: 2.5em;
+  border: none;
+  border-bottom: 4px solid cornflowerblue;
+  background-color: #f4f1ec;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* styles associated with the footer of the new tweet */
 #tweet-btn {
   background-color: pink;
 }
@@ -25,20 +38,12 @@
   padding-top: 0.5em;
 }
 
-#tweet-text {
-  width: 100%;
-  height: 2.5em;
-  border: none;
-  border-bottom: 4px solid cornflowerblue;
-  background-color: #f4f1ec;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
+/* class only added to counter if count < 140 */
 .negative {
   color: red;
 }
 
+/* styles associated with error label */
 #error {
   display: flex;
   align-items: center;

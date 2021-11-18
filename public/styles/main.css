@@ -9,7 +9,7 @@
 
 /* For individual tweets */
 
-/* styles involving the tweet box */
+/* styles associated with the tweet box */
 .tweet {
   border: 5px palevioletred dashed;
   padding: 0.7em;
@@ -20,7 +20,7 @@
   box-shadow: 5px 10px #888888;
 }
 
-/* styles involving the header of the tweet */
+/* styles assocciated with the header of the tweet */
 article.tweet > header {
   display:flex;
   justify-content: space-between;
@@ -41,7 +41,7 @@ article > header > div > img {
   margin-left: 0.5em;
 }
 
-/* styles involving the footer of the tweet */
+/* styles associated with the footer of the tweet */
 div.icons > i {
   margin-left: 0.5em;
 }
