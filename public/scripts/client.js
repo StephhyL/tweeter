@@ -1,24 +1,16 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
-
 // jQuery's document ready function. Everything will run once page is loaded
 $(()=> {
   // hiding the error message upon initial page load
   $("#error").hide();
 
   /**
-   *  creates a new tweet with all the HTML elements. parameter tweet is an object
+   *  creates a new tweet with all appropriate HTML elements. tweet is an object.
   */
   const createTweetElement = (tweet) => {
-    
     const $img = $("<img>").attr("src",tweet.user.avatars);
     const $spanName = $("<span>").attr("name", "name").text(tweet.user.name);
     const $divAvatarName = $("<div>").addClass("avatar-name");
-    // appending avatar img and user name into a div
+    // appending avatar img and username into a div
     $divAvatarName.append($img, $spanName);
     
     const $spanHandle = $("<span>").attr("name", "handle").text(tweet.user.handle);
@@ -52,7 +44,7 @@ $(()=> {
    * For each tweet in the tweets array, calls createTweetElement function and its return value is appended to the tweets container
   */
   const renderTweets = (tweets) => {
-    // empties the container first before prepending new tweets to it.
+    // empties the container first before prepending new tweets to it
     $("#tweets-container").empty();
 
     tweets.forEach(tweet => {
@@ -75,7 +67,6 @@ $(()=> {
 
   // loads the api/server.js tweets upon inital GET request to website
   loadTweets();
-
 
   /**
    * validates if the tweet is within 1-140 characters. If outside range, returns error: message.
@@ -108,10 +99,10 @@ $(()=> {
       return $("#error").slideDown("fast");
     }
 
-    // serializes form data into query string
+    // serializes form data into a query string
     const serializedData = $(this).serialize();
 
-    // ajax POST request to api/server.js activated if tweet is valid
+    // ajax POST request to api/server.js is activated if tweet is valid
     $.post("/tweets", serializedData, (response) => {
       //clears the textbox after user writes a tweet
       this.text.value = "";
@@ -122,5 +113,3 @@ $(()=> {
     });
   });
 });
-
-
