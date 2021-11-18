@@ -56,3 +56,16 @@ div.icons > i:hover {
   padding-top: 0.5em;
   margin-top: 0.5em;
 }
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin-top: 12em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    margin-top: 6em;
+  }
+}
