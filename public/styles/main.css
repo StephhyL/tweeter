@@ -60,7 +60,7 @@ div.icons > i:hover {
 @media only screen and (max-width: 768px) {
   .container {
     width: 90%;
-    margin-top: 12em;
+    margin-top: 10em;
   }
 }
 
