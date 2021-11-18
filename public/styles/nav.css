@@ -23,6 +23,10 @@
   align-items: center;
 }
 
+#write {
+  font-weight: bold;
+}
+
 #arrow {
   color: red;
   background-color: pink;
@@ -41,7 +45,7 @@
     border-radius: 5px;
     padding: 0.5em;
   }
-  .create > span {
+  .create > p {
     color: white;
     background-color: darkblue;
     padding: 0.5em;
