@@ -28,3 +28,39 @@
   background-color: pink;
   border: none;
 }
+
+
+@media only screen and (max-width: 768px) {
+  .top {
+    background-color: transparent;
+    position: static;
+  }
+  .logo {
+    color: white;
+    background-color: darkblue;
+    border-radius: 5px;
+    padding: 0.5em;
+  }
+  .create > span {
+    color: white;
+    background-color: darkblue;
+    padding: 0.5em;
+    border-radius: 5px;
+  }
+  #arrow {
+    background-color: transparent;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .top {
+    height: 10%;
+  }
+}
+
+
+@media only screen and (min-width: 1300px) {
+  .top {
+    width: 1300px;
+  }
+}
