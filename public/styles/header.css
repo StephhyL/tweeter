@@ -6,21 +6,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(150, 218, 250);
-  background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
   position: relative;
   margin-top: 150px;
   margin-left: 4%;
   z-index: 1;
+  background-color: rgb(150, 218, 250);
+  background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
 }
 
 .name {
   color: #200b0b;
-  margin: 0px;
   background-color: white;
+  font-weight: bold;
+  margin: 0px;
   border-radius: 15px;
   padding: 5px;
-  font-weight: bold;
 }
 
 /* Media queries for different screen sizes */
@@ -28,8 +28,8 @@
   .heading {
     width: 100%;
     margin:0px;
-    position:absolute;
     height: 350px;
+    position:absolute;
   }
 }
 
