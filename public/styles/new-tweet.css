@@ -42,11 +42,15 @@
 #error {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   padding: 0.5em;
   color: red;
   border: 0.25em solid red;
+}
+
+#error > p {
+  text-align: center;
 }
 
