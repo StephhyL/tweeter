@@ -10,6 +10,7 @@ This repository, though not intentional, is also a template.
 
 ## Final Product
 
+!["Screenshot of the larger screen version of the site upon inital load"](https://github.com/StephhyL/tweeter/blob/master/docs/desktop-version-initial-page-load.png)
 
 ## Getting Started
 
