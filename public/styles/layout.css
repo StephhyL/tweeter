@@ -29,6 +29,7 @@ body {
   font-family: source sans pro;
   box-sizing: border-box;
   display: flex;
+  flex-direction: row;
  }
 
  main {
@@ -38,3 +39,23 @@ body {
    background-color: #f4f1ec;
  }
 
+ @media only screen and (max-width: 768px) {
+   body {
+     display: flex;
+     flex-direction: column;
+   }
+ }
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+
+ @media only screen and (min-width: 1300px) {
+   body {
+     width: 1300px;
+     margin: auto;
+   }
+ }
