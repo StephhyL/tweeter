@@ -86,7 +86,7 @@ $(()=> {
       return {error: "No input detected. Please tweet something!", val: null};
     }
     if (number > 140) {
-      return {error: "Sorry, length of tweet must be < 140 characters.", val: null}
+      return {error: "Sorry, length of tweet must not be over 140 characters.", val: null}
     }
     return {error:null, val: true}
   }
